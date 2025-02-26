@@ -1,0 +1,60 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* tablet & mobile */
+@media (max-width: 991.98px) {
+  /* 1. Ẩn navbar trên tablet và mobile */
+  .navbar {
+    display: none;
+  }
+  /* 2. Chuyển logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+
+  /* 3. Căn lại vị trí của menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 36px;
+    left: 28px;
+    color: #fff;
+    width: 24px;
+  }
+
+  /* 4. Overplay */
+  .menu-overplay{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* bình thường ẩn overplay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  /* 5. Triển khai nếu checkbox được check thì hiện overplay */
+  .menu-checkbox:checked ~ .menu-overplay{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+}
+
+/* tạm ẩn phần không liên quan */
+.hero, footer, main{
+    display: none;
+}
