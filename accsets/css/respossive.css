@@ -91,41 +91,73 @@
     row-gap: 50px;
   }
 
-  .hero__content{
+  .hero__content {
     order: 2;
   }
 
-  .hero__media{
+  .hero__media {
     order: 1;
   }
 
-  .hero__content{
+  .hero__content {
     width: 80%;
     text-align: center;
     margin: 22px auto;
   }
 
-  .hero__row{
+  .hero__row {
     justify-content: center;
   }
 
   /* Khối service */
-  .service__row{
-   flex-direction: column; 
-   row-gap: 20px;
+  .service__row {
+    flex-direction: column;
+    row-gap: 20px;
   }
 
-  .service__img{
+  .service__img {
     width: 100%;
   }
 
-  .service__list{
+  .service__list {
     text-align: center;
   }
 
-  .service-item{
+  .service-item {
     width: 90%;
     text-align: start;
+  }
+
+  /* work list */
+  .work__list {
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+  }
+
+  /* about */
+  .about-row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .about__media {
+    width: 100%;
+  }
+
+  /* ẩn ảnh small */
+  .about__img--small {
+    display: none;
+  }
+
+  .about__img--big {
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px auto;
+  }
+
+  .about-content{
+    width: 90%;
+    text-align: center;
   }
 }
 
